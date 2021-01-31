@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.agileq.kettle.splunk</groupId>
+  <artifactId>app-pentaho-kettle-splunk</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+
+  <name>app-pentaho-kettle-splunk</name>
+  <!-- FIXME change it to the project's website -->
+  <url>https://github.com/Jacksn2014</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.target>1.7</maven.compiler.target>
+		<maven.compiler.source>1.7</maven.compiler.source>
+		<kettle.version>6.1.0.1-196</kettle.version>
+		<buildId>${maven.build.timestamp}</buildId>
+		<maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
+		<local.kettle.path>D:/data-integration</local.kettle.path>
+		<mockito-all.version>1.9.5</mockito-all.version>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>pentaho-releases</id>
+			<url>http://repository.pentaho.org/artifactory/repo/</url>
+		</repository>
+		<repository>
+			<id>swt-repo</id>
+			<url>https://swt-repo.googlecode.com/svn/repo/</url>
+		</repository>
+
+		<repository>
+			<id>eclipse-maven-repo</id>
+			<name>Eclipse Maven</name>
+			<url>https://mvnrepository.com</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>org.pentaho.di</groupId>
+			<artifactId>kettle-core</artifactId>
+			<version>${kettle.version}</version>
+			<scope>system</scope>
+			<systemPath>${local.kettle.path}/lib/kettle-core-6.1.0.1-196.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>org.pentaho.di</groupId>
+			<artifactId>kettle-dbdialog</artifactId>
+			<version>${kettle.version}</version>
+			<scope>system</scope>
+			<systemPath>${local.kettle.path}/lib/kettle-dbdialog-6.1.0.1-196.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>org.pentaho.di</groupId>
+			<artifactId>kettle-engine</artifactId>
+			<version>${kettle.version}</version>
+			<scope>system</scope>
+			<systemPath>${local.kettle.path}/lib/kettle-engine-6.1.0.1-196.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>org.pentaho.di</groupId>
+			<artifactId>kettle-ui-swt</artifactId>
+			<version>${kettle.version}</version>
+			<scope>system</scope>
+			<systemPath>${local.kettle.path}/lib/kettle-ui-swt-6.1.0.1-196.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>org.pentaho.di</groupId>
+			<artifactId>pentaho-metadata</artifactId>
+			<version>${kettle.version}</version>
+			<scope>system</scope>
+			<systemPath>${local.kettle.path}/lib/pentaho-metadata-6.1.0.1-196.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>org.pentaho.di.core.logging</groupId>
+			<artifactId>kettle5-log4j-plugin</artifactId>
+			<version>${kettle.version}</version>
+			<scope>system</scope>
+			<systemPath>${local.kettle.path}/lib/kettle5-log4j-plugin-6.1.0.1-196.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>org.pentaho.di</groupId>
+			<artifactId>metastore</artifactId>
+			<version>${kettle.version}</version>
+			<scope>system</scope>
+			<systemPath>${local.kettle.path}/lib/metastore-6.1.0.1-196.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.swt</groupId>
+			<artifactId>swt</artifactId>
+			<version>4.332</version>
+			<scope>system</scope>
+			<systemPath>${local.kettle.path}/libswt/win64/swt.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>com.splunk</groupId>
+			<artifactId>splunk</artifactId>
+			<version>1.6.5.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.9</version>
+		</dependency>
+	</dependencies>
+
+	<!-- Calling repository in order to build the artifact / dependencies -->
+	<build>
+		<finalName>${project.artifactId}</finalName>
+		<resources>
+			<resource>
+				<directory>src/main/java</directory>
+				<includes>
+					<include>**/*.properties</include>
+					<include>**/*.xml</include>
+					<include>**/*.svg</include>
+				</includes>
+			</resource>
+			<resource>
+				<directory>src/main/resources</directory>
+				<includes>
+					<include>**/*.properties</include>
+					<include>**/*.xml</include>
+					<include>**/*.svg</include>
+				</includes>
+			</resource>
+		</resources>
+
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-shade-plugin</artifactId>
+				<version>3.1.0</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>shade</goal>
+						</goals>
+						<configuration>
+							<filters>
+								<filter>
+									<artifact>*:*</artifact>
+									<excludes>
+										<exclude>org/eclipse/swt/**</exclude>
+									</excludes>
+								</filter>
+							</filters>
+							<relocations>
+								<relocation>
+									<pattern>com.test</pattern>
+									<shadedPattern>agileq.com.test</shadedPattern>
+								</relocation>
+							</relocations>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+
+</project>
+

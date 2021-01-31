@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>pentaho-elasticsearch-bulk-insert-plugin7</groupId>
+	<artifactId>org.pentaho.trans</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<name>org.pentaho.trans</name>
+	<url>https://github.com/Jacksn2014</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<pdi.version>6.1.0.1-SNAPSHOT</pdi.version>
+		<build.revision>${project.version}</build.revision>
+		<timestamp>${maven.build.timestamp}</timestamp>
+		<build.description>${project.description}</build.description>
+		<maven.build.timestamp.format>yyyy/MM/dd hh:mm</maven.build.timestamp.format>
+		<elasticsearch.version>7.2.0</elasticsearch.version>
+	</properties>
+
+	<dependencies>
+       <dependency>
+			<groupId>org.elasticsearch.client</groupId>
+			<artifactId>elasticsearch-rest-high-level-client</artifactId>
+			<version>${elasticsearch.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.elasticsearch</groupId>
+			<artifactId>elasticsearch</artifactId>
+			<version>${elasticsearch.version}</version>
+			<scope>compile</scope>
+		</dependency>
+		<!-- <dependency>
+			<groupId>org.elasticsearch.client</groupId>
+			<artifactId>transport</artifactId>
+			<version>${elasticsearch.version}</version>
+			<scope>compile</scope>
+		</dependency> -->
+		<dependency>
+			<groupId>org.pentaho</groupId>
+			<artifactId>kettle-engine</artifactId>
+			<version>6.1.0.1</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/lib/kettle-engine-6.1.0.1-196.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>org.pentaho</groupId>
+			<artifactId>kettle-ui-swt</artifactId>
+			<version>6.1.0.1</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/lib/kettle-ui-swt-6.1.0.1-196.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>org.pentaho.di.core.logging</groupId>
+			<artifactId>kettle5-log4j-plugin</artifactId>
+			<version>6.1.0.1</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/lib/kettle5-log4j-plugin-6.1.0.1-196.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>org.pentaho</groupId>
+			<artifactId>metastore</artifactId>
+			<version>6.1.0.1</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/lib/metastore-6.1.0.1-196.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>org.pentaho.di</groupId>
+			<artifactId>kettle-core</artifactId>
+			<version>6.1.0.1</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/lib/kettle-core-6.1.0.1-196.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>org.pentaho.ui</groupId>
+			<artifactId>kettle-dbdialog</artifactId>
+			<version>6.1.0.1</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/lib/kettle-dbdialog-6.1.0.1-196.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse</groupId>
+			<artifactId>swt</artifactId>
+			<version>6.1.0.1</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/lib/swt.jar</systemPath>
+		</dependency>
+		<dependency>
+		    <groupId>commons-lang</groupId>
+		    <artifactId>commons-lang</artifactId>
+		    <version>2.6</version>
+        </dependency>
+	</dependencies>
+
+	<build>
+		<resources>
+			<resource>
+				<filtering>false</filtering>
+				<directory>src/main/resources</directory>
+			</resource>
+		</resources>
+	</build>
+</project>

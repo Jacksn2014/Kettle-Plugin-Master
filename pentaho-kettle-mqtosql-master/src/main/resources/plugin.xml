@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+
+   id="MqToSqlPlugin"
+   iconfile="icon.png"
+   description="Mq To Sql"
+   tooltip="Only there for MqToSql purposes"
+   category="AgilqQ"
+   classname="com.agileq.kettle.mts.plugin.MqToSqlMeta">
+		
+		<libraries>
+    		<library name="pentaho-kettle-mqtosql-plugin.jar"/>
+            <library name="lib/fastjson-1.2.29.jar"/>
+            <library name="lib/fel.jar"/>
+			<library name="lib/commons-lang3-3.5.jar" />
+		</libraries>
+		
+</plugin>
