@@ -92,7 +92,7 @@ search earliest=-7d@d latest=@d index=sep |stats dc(ip) as ip<br>
 ⑧Maximum duration of：当次消费限制的超时时间阈值，默认0不限制，单位毫秒（必选）<br>
 ⑨Stop on empty topic：topic为空时是否停止任务（可选）<br><br>
 
-6、KafkaConsumer插件<br>
+6、KafkaConsumerAssignPartition插件<br>
 ①Topic name：要消费的topic名称（必选）<br>
 ②Target message field name：消息message对应的输出字段名称（必选）<br>
 ③Target key field name：消息key对应的输出字段名称（必选）<br>
