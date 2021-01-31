@@ -90,4 +90,17 @@ search earliest=-7d@d latest=@d index=sep |stats dc(ip) as ip<br>
 ⑥Offset value：初始化对应partition的offset值,多个分区用逗号隔开（必选）<br>
 ⑦JMessages limit：当次消费限制的消息行阈值，默认0不限制（必选）<br>
 ⑧Maximum duration of：当次消费限制的超时时间阈值，默认0不限制，单位毫秒（必选）<br>
-⑨Stop on empty topic：topic为空时是否停止任务（可选）<br>
+⑨Stop on empty topic：topic为空时是否停止任务（可选）<br><br>
+
+6、KafkaConsumerAssignPartition插件<br>
+①Topic name：要消费的topic名称（必选）<br>
+②Target message field name：消息message对应的输出字段名称（必选）<br>
+③Target key field name：消息key对应的输出字段名称（必选）<br>
+④Partition name：消息partition对应的输出字段名称（必选）<br>
+⑤Assign Partition：指定消息主题对应partition编号（必选）<br>
+⑥Offset name：消息offset对应的输出字段名称（必选）<br>
+⑦Offset value：初始化对应partition的offset值,多个分区用逗号隔开（必选）<br>
+⑧group.id：自定义的消费组ID,插件下方参数设置有默认值（可选）<br>
+⑨Messages limit：当次消费限制的消息行阈值，默认0不限制（必选）<br>
+⑩Maximum duration of：当次消费限制的超时时间阈值，默认0不限制，单位毫秒（必选）<br>
+⑪Stop on empty topic：topic为空时是否停止任务（可选）<br>
