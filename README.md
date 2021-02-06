@@ -103,4 +103,9 @@ search earliest=-7d@d latest=@d index=sep |stats dc(ip) as ip<br>
 ⑧group.id：自定义的消费组ID,插件下方参数设置有默认值（可选）<br>
 ⑨Messages limit：当次消费限制的消息行阈值，默认0不限制（必选）<br>
 ⑩Maximum duration of：当次消费限制的超时时间阈值，默认0不限制，单位毫秒（必选）<br>
-⑪Stop on empty topic：topic为空时是否停止任务（可选）<br>
+⑪Stop on empty topic：topic为空时是否停止任务（可选）<br><br>
+
+7、KafkaProducerByKey插件<br>
+①Topic name：要推送消息的topic名称（必选）<br>
+②Message field name：消息message对应的输出字段名称（必选）<br>
+③Key field name：消息key对应的输出字段名称，为空则随机分区分配（可选）<br>
