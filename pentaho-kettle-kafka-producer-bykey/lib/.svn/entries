@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="11"
+   name=""
+   committed-date="2010-07-28T06:53:50.431965Z"
+   url="svn://121.101.213.138/kettle/plugins/jasperreport/lib"
+   last-author="dev"
+   kind="dir"
+   uuid="6131e185-bc4d-4acb-9c38-817d28d67175"
+   repos="svn://121.101.213.138"
+   revision="13"/>
+<entry
+   committed-rev="11"
+   name="jasper-reporting-plugin.jar"
+   text-time="2010-08-01T08:24:12.000000Z"
+   committed-date="2010-07-28T06:53:50.431965Z"
+   checksum="49291393fe43158b4dce2ca46c263bde"
+   last-author="dev"
+   kind="file"
+   prop-time="2010-08-01T08:24:12.000000Z"/>
+</wc-entries>
