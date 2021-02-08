@@ -7,7 +7,7 @@ import org.pentaho.di.trans.step.StepDataInterface;
 
 /**
  * The Redis Delete step delete value objects, by the given key names, from Redis server(s).
- * @author minjie.qu
+ * @author 微信公众号"以数据之名"
  * @createDate 2019年1月6日 下午4:31:18
  * @version v0.1
  * @describe 从Redis删除Key，定义kettle插件的RowMetaInterface

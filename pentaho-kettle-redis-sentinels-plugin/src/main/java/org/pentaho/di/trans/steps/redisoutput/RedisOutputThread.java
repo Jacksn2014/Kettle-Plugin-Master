@@ -9,7 +9,7 @@ import redis.clients.jedis.Jedis;
  * The Redis Output step insert into value objects, by the given key names, from
  * Redis server(s).
  * 
- * @author minjie.qu
+ * @author 微信公众号"以数据之名"
  * @createDate 2019年1月7日 上午9:43:38
  * @version v0.1
  * @describe 往Redis插入数据，多线程处理类RedisOutputThread

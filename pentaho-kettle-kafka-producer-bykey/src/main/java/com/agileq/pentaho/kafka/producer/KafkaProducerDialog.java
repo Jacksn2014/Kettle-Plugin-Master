@@ -36,11 +36,11 @@ import org.pentaho.di.ui.core.widget.TextVar;
 import org.pentaho.di.ui.trans.step.BaseStepDialog;
 
 /**
- * 微信公众号（游走在数据之间）
+ * 微信公众号"以数据之名"
  * 
  * @ClassName: KafkaProducerDialog
  * @Description: UI for the Kafka Producer By Key step
- * @author: AgileQ
+ * @author: itbigbird
  * @date: 2019年8月10日 下午3:33:48
  */
 public class KafkaProducerDialog extends BaseStepDialog implements

@@ -12,11 +12,10 @@ import kafka.consumer.KafkaStream;
 import kafka.javaapi.consumer.ConsumerConnector;
 
 /**
- * 微信公众号（游走在数据之间）
- * 
+ * 微信公众号"以数据之名"
+ * @author: itbigbird
  * @ClassName: KafkaConsumerData
  * @Description: Holds data processed by this step
- * @author: Agile.Q
  * @date: 2017年7月4日 下午4:33:48
  */
 public class KafkaConsumerData extends BaseStepData implements

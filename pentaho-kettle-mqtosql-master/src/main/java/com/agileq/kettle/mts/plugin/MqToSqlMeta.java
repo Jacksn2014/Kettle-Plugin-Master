@@ -31,13 +31,13 @@ import org.pentaho.di.trans.step.StepMetaInterface;
 import org.w3c.dom.Node;
 
 /**
- * (微信公众号：游走在数据之间)
+ * 微信公众号"以数据之名"
  * @Title: MQ To SQL
  * @ClassName: MqToSqlMeta
  * @Description: 元数据类
- * @author AgileQ
- * @date 2017-04-12 下午07:10:26
- * @version V1.0
+ * @author: itbigbird
+ * @date：2017-04-12 下午07:10:26
+ * @version：V1.0
  */
 @SuppressWarnings("deprecation")
 public class MqToSqlMeta extends BaseStepMeta implements StepMetaInterface {

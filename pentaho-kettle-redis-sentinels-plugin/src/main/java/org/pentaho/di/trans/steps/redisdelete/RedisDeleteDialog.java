@@ -43,7 +43,7 @@ import org.pentaho.di.ui.trans.step.BaseStepDialog;
 
 /**
  *  The Redis Delete step delete value objects, by the given key names, from Redis server(s).
- * @author minjie.qu
+ * @author 微信公众号"以数据之名"
  * @createDate 2019年1月6日 下午4:35:18
  * @version v0.1
  * @describe  从Redis删除Key，定义kettle插件redis find del的UI Swing的对话框

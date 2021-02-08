@@ -39,7 +39,7 @@ import org.w3c.dom.Node;
  * The Redis Output step insert into value objects, by the given key names, from
  * Redis server(s).
  * 
- * @author minjie.qu
+ * @author 微信公众号"以数据之名"
  * @createDate 2019年1月7日 上午9:41:58
  * @version v0.1
  * @describe 往Redis插入数据，根据配置执行redis操作，并定义kettle插件显示类

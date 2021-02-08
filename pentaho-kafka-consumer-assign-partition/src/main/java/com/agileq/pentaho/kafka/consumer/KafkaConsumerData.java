@@ -8,8 +8,8 @@ import org.pentaho.di.trans.step.BaseStepData;
 import org.pentaho.di.trans.step.StepDataInterface;
 
 /**
- * 微信公众号（游走在数据之间）
- * @author AgileQ
+ * 微信公众号"以数据之名"
+ * @author: itbigbird
  * @createDate 2019年7月23日 下午5:01:23
  * @version v0.1
  * @describe KafkaConsumerData

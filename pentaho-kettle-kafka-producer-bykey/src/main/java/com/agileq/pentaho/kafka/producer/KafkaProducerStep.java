@@ -18,11 +18,11 @@ import org.pentaho.di.trans.step.StepMeta;
 import org.pentaho.di.trans.step.StepMetaInterface;
 
 /**
- * 微信公众号（游走在数据之间）
+ * 微信公众号"以数据之名"
  * 
  * @ClassName: KafkaProducerStep
  * @Description: Kafka Producer step processor
- * @author: AgileQ
+ * @author: itbigbird
  * @date: 2019年8月10日 下午3:33:48
  */
 public class KafkaProducerStep extends BaseStep implements StepInterface {

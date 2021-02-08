@@ -34,11 +34,10 @@ import org.pentaho.di.ui.core.widget.TextVar;
 import org.pentaho.di.ui.trans.step.BaseStepDialog;
 
 /**
- * 微信公众号（游走在数据之间）
- * 
+ * 微信公众号"以数据之名"
+ * @author: itbigbird
  * @ClassName: KafkaConsumerDialog
  * @Description: UI for the Kafka Consumer step
- * @author: minjie.qu
  * @date: 2017年7月4日 下午4:33:48
  */
 public class KafkaConsumerDialog extends BaseStepDialog implements

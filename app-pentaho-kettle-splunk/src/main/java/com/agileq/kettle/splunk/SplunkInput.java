@@ -20,6 +20,13 @@ import com.splunk.JobResultsArgs;
 import com.splunk.ResultsReaderXml;
 import com.splunk.Service;
 
+/**
+ * 微信公众号"以数据之名"
+ * @author: itbigbird
+ * @ClassName: SplunkInput
+ * @Description: Holds data processed by this step
+ * @date: 2019年8月18日 下午2:33:48
+ */
 public class SplunkInput extends BaseStep implements StepInterface {
 
 	private SplunkInputMeta meta;

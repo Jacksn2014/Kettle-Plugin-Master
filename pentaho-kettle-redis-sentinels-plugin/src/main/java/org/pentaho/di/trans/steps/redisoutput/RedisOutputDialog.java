@@ -45,7 +45,7 @@ import org.pentaho.di.ui.trans.step.BaseStepDialog;
  * The Redis Output step insert into value objects, by the given key names, from
  * Redis server(s).
  * 
- * @author minjie.qu
+ * @author 微信公众号"以数据之名"
  * @createDate 2019年1月7日 上午9:41:16
  * @version v0.1
  * @describe 往Redis插入数据，定义kettle插件redis input的UI Swing的对话框

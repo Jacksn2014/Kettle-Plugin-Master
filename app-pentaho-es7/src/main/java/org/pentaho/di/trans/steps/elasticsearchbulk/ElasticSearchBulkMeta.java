@@ -61,7 +61,8 @@ import org.pentaho.di.trans.steps.elasticsearchbulk.ElasticSearchBulkData;
 
 /**
  * 
- * @author Agile.Q(微信公众号：itbigbird)
+ * 微信公众号"以数据之名"
+ * @author: itbigbird
  * @createDate 2019年7月24日 下午2:16:36
  * @version v0.1
  * @describe ElasticSearchBulkMeta

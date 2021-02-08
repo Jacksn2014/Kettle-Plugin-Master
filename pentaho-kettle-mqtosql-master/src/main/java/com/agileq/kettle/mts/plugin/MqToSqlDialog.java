@@ -30,13 +30,13 @@ import org.pentaho.di.ui.core.dialog.ErrorDialog;
 import org.pentaho.di.ui.trans.step.BaseStepDialog;
 
 /**
- * (微信公众号：游走在数据之间)
+ * 微信公众号"以数据之名"
  * @Title: MQ To SQL
  * @ClassName: MqToSqlDialog 
  * @Description: 对话框类
- * @author AgileQ
- * @date 2017-04-12 下午07:10:26
- * @version V1.0
+ * @author: itbigbird
+ * @date: 2017-04-12 下午07:10:26
+ * @version: V1.0
  */
 
 public class MqToSqlDialog extends BaseStepDialog implements

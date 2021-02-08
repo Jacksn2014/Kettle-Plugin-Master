@@ -28,7 +28,8 @@ import org.pentaho.di.trans.step.StepDataInterface;
 
 /**
  * 
- * @author Agile.Q(微信公众号：itbigbird)
+ * 微信公众号"以数据之名"
+ * @author: itbigbird
  * @createDate 2019年7月24日 下午2:16:24
  * @version v0.1
  * @describe ElasticSearchBulkData
