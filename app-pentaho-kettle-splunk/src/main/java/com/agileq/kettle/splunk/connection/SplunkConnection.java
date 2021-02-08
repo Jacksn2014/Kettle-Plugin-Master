@@ -9,6 +9,13 @@ import com.splunk.SSLSecurityProtocol;
 import com.splunk.Service;
 import com.splunk.ServiceArgs;
 
+/**
+ * 微信公众号"以数据之名"
+ * @author: itbigbird
+ * @ClassName: SplunkConnection
+ * @Description: splunk connect init and test
+ * @date: 2019年8月18日 下午2:33:48
+ */
 public class SplunkConnection extends Variables {
 
 	private String name;

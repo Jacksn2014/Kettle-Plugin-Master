@@ -55,6 +55,13 @@ import com.splunk.JobArgs;
 import com.splunk.ResultsReaderXml;
 import com.splunk.Service;
 
+/**
+ * 微信公众号"以数据之名"
+ * @author: itbigbird
+ * @ClassName: SplunkInputDialog
+ * @Description: define plugin dialog 
+ * @date: 2019年8月18日 下午2:33:48
+ */
 public class SplunkInputDialog extends BaseStepDialog implements
 		StepDialogInterface {
 

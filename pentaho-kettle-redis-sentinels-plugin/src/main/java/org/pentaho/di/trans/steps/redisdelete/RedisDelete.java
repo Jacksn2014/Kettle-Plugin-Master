@@ -24,7 +24,7 @@ import redis.clients.jedis.JedisSentinelPool;
  * The Redis Delete step delete value objects, by the given key names, from
  * Redis server(s).
  * 
- * @author minjie.qu
+ * @author 微信公众号"以数据之名"
  * @createDate 2019年1月6日 下午4:26:40
  * @version v0.1
  * @describe 从Redis删除Key，初始化Redis连接配置

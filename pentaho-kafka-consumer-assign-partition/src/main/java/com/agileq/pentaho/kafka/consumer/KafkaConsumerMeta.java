@@ -34,8 +34,8 @@ import org.w3c.dom.Node;
 import kafka.consumer.ConsumerConfig;
 
 /**
- * 微信公众号（游走在数据之间）
- * @author AgileQ
+ * 微信公众号"以数据之名"
+ * @author: itbigbird
  * @createDate 2019年7月23日 下午5:14:54
  * @version v0.1
  * @describe Kafka Consumer step definitions and serializer to/from XML and

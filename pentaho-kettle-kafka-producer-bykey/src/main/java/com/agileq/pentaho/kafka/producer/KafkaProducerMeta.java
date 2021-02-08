@@ -28,12 +28,12 @@ import org.pentaho.di.trans.step.StepMetaInterface;
 import org.w3c.dom.Node;
 
 /**
- * 微信公众号（游走在数据之间）
+ * 微信公众号"以数据之名"
  * 
  * @ClassName: KafkaProducerMeta
  * @Description: Kafka Producer step definitions and serializer to/from XML and
  *               to/from Kettle repository.
- * @author: AgileQ
+ * @author: itbigbird
  * @date: 2019年8月10日 下午3:33:48
  */
 public class KafkaProducerMeta extends BaseStepMeta implements

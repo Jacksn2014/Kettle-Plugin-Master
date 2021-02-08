@@ -13,11 +13,11 @@ import com.alibaba.fastjson.JSONException;
 import com.alibaba.fastjson.JSONObject;
 
 /**
- * (微信公众号：游走在数据之间)
+ * 微信公众号"以数据之名"
  * @Title: MQ To SQL
  * @ClassName: JsonToSqlUtil
  * @Description: json转换成可执行mysql的DML语句sql
- * @author AgileQ
+ * @author: itbigbird
  * @date: 2017-04-12 下午07:10:26
  * @version V1.0
  */

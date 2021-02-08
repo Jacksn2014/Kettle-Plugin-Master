@@ -132,7 +132,8 @@ import org.pentaho.di.ui.trans.steps.elasticsearchbulk.LabelTimeComposite;
 
 /**
  * 
- * @author Agile.Q(微信公众号：itbigbird)
+ * 微信公众号"以数据之名"
+ * @author: itbigbird
  * @createDate 2019年10月24日 下午5:31:59
  * @version v0.1
  * @describe ElasticSearchBulkDialog

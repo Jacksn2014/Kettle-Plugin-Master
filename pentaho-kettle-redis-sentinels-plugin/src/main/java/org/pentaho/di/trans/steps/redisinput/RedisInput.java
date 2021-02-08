@@ -25,7 +25,7 @@ import redis.clients.jedis.JedisSentinelPool;
  * The Redis Input step looks up value objects, from the given key names, from
  * Redis server(s).
  * 
- * @author minjie.qu
+ * @author 微信公众号"以数据之名"
  * @createDate 2019年1月6日 下午4:13:36
  * @version v0.1
  * @describe 从Redis读取数据，初始化Redis连接配置

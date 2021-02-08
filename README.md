@@ -1,5 +1,5 @@
 # Kettle-Plugin-Master
-微信公众号："游走在数据之间"<br><br>
+微信公众号："以数据之名"<br><br>
 基于Kettle6.X和Kettle7.x平台，构建Kettle自定义插件库
 <br><br>
 一、集成方式：<br>

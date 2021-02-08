@@ -30,6 +30,13 @@ import org.pentaho.di.trans.step.StepMetaInterface;
 import org.pentaho.metastore.api.IMetaStore;
 import org.w3c.dom.Node;
 
+/**
+ * 微信公众号"以数据之名"
+ * @author: itbigbird
+ * @ClassName: SplunkInputMeta
+ * @Description: define plugin meta 
+ * @date: 2019年8月18日 下午2:33:48
+ */
 @Step(id = "KettleSplunkInput", name = "Splunk Input", description = "Read data from Splunk", image = "splunk.svg", categoryDescription = "Input")
 @InjectionSupported(localizationPrefix = "Cypher.Injection.", groups = {
 		"PARAMETERS", "RETURNS" })

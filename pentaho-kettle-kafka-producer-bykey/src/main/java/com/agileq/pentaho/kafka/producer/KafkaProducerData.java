@@ -7,11 +7,11 @@ import org.pentaho.di.trans.step.BaseStepData;
 import org.pentaho.di.trans.step.StepDataInterface;
 
 /**
- * 微信公众号（游走在数据之间）
+ * 微信公众号"以数据之名"
  * 
  * @ClassName: KafkaProducerData
  * @Description: Holds data processed by this step
- * @author: AgileQ
+ * @author: itbigbird
  * @date: 2019年8月10日 下午3:33:48
  */
 public class KafkaProducerData extends BaseStepData implements

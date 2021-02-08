@@ -10,11 +10,10 @@ import kafka.consumer.KafkaStream;
 import kafka.message.MessageAndMetadata;
 
 /**
- * 微信公众号（游走在数据之间）
- * 
+ * 微信公众号"以数据之名"
+ * @author: itbigbird
  * @ClassName: KafkaConsumerCallable
  * @Description: Kafka reader callable
- * @author: Agile.Q
  * @date: 2017年7月4日 下午4:33:48
  */
 public abstract class KafkaConsumerCallable implements Callable<Object> {
