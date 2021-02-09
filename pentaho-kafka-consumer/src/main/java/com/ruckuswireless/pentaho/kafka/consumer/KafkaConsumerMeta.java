@@ -35,7 +35,7 @@ import kafka.consumer.ConsumerConfig;
 
 /**
  * 微信公众号"以数据之名"
- * @author itbigbird
+ * @author: itbigbird
  * @ClassName: KafkaConsumerMeta
  * @Description: Kafka Consumer step definitions and serializer to/from XML and
  *               to/from Kettle repository.
